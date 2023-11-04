@@ -6,18 +6,18 @@ import codecs
 # hash需要调用的库
 import hashlib, binascii
 # AES-GCM需要调用的库
-from Crypto.Cipher import AES
+from Cryptodome.Cipher import AES
 import struct
 # RSA-2048需要调用的库
-from Crypto.PublicKey import RSA
-from Crypto.Signature import pkcs1_15
-from Crypto.Hash import SHA256
-from Crypto.Cipher import PKCS1_OAEP
+from Cryptodome.PublicKey import RSA
+from Cryptodome.Signature import pkcs1_15
+from Cryptodome.Hash import SHA256
+from Cryptodome.Cipher import PKCS1_OAEP
 from base64 import b64encode
 # gmssl实现了国密sm4、sm3、sm2
-from gmssl.sm4 import CryptSM4, SM4_ENCRYPT, SM4_DECRYPT
-from gmssl import sm2, func
-from gmssl import sm3
+#from gmssl.sm4 import CryptSM4, SM4_ENCRYPT, SM4_DECRYPT
+#from gmssl import sm2, func
+#from gmssl import sm3
 
 
 """
